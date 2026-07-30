@@ -4,11 +4,13 @@ import Image from "~/lib/image";
 type ContactPersonProps = {
   firstContactUrl: string;
   secondContactUrl?: string;
+  horizontal?: boolean;
 };
 
 export default function ContactPerson({
   firstContactUrl,
   secondContactUrl,
+  horizontal = false,
 }: ContactPersonProps) {
   return (
     <main className="from-primary-30 to-primary-20 relative h-73 w-full max-w-300 overflow-hidden rounded-2xl bg-linear-to-b max-lg:h-70 max-lg:max-w-180 max-sm:h-[477px] max-sm:w-80 max-sm:rounded-[32px]">
@@ -37,9 +39,15 @@ export default function ContactPerson({
           <p className="text-b6 max-sm:text-b8 text-left max-sm:justify-center max-sm:text-center">
             Hubungi kami pada kontak berikut{" "}
           </p>
-          <div className="mt-5 flex justify-start gap-3 max-lg:flex-col max-lg:items-center max-lg:gap-3">
+          <div
+            className={`mt-5 flex gap-3 ${
+              horizontal
+                ? "flex-row flex-wrap justify-center"
+                : "max-lg:flex-col max-lg:items-center max-lg:gap-3 justify-start"
+            }`}
+          >
             <a
-              className="bg-primary-70 text-s8 flex w-fit items-center gap-2 rounded-md px-3 py-2 font-bold text-white max-lg:w-41 max-lg:justify-center max-lg:py-3"
+              className="bg-primary-70 text-s8 flex w-fit items-center gap-2 rounded-md px-4 py-3 font-bold text-white max-lg:w-41 max-lg:justify-center max-lg:py-3"
               href={firstContactUrl}
               rel="noopener"
               target="_blank"
@@ -49,7 +57,7 @@ export default function ContactPerson({
             </a>
             {secondContactUrl && (
               <a
-                className="bg-primary-70 text-s8 flex w-fit items-center gap-2 rounded-md px-3 py-2 font-bold text-white max-lg:w-41 max-lg:justify-center max-lg:py-3"
+                className="bg-primary-70 text-s8 flex w-fit items-center gap-2 rounded-md px-4 py-3 font-bold text-white max-lg:w-41 max-lg:justify-center max-lg:py-3"
                 href={secondContactUrl}
                 rel="noopener"
                 target="_blank"

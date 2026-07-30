@@ -1,3 +1,4 @@
+/*
 import { DemoSection } from "../shared/demo-section";
 import { ComponentPreview } from "../shared/component-preview";
 import { CodeBlock } from "../shared/code-block";
@@ -9,7 +10,7 @@ export function FooterDemo() {
       description="Main application footer."
       id="footer"
       title="Footer"
-    >
+  ~>
       <ComponentPreview>
         <div className="bg-background relative w-full overflow-hidden rounded-md border">
           <Footer />
@@ -21,3 +22,6 @@ export function FooterDemo() {
     </DemoSection>
   );
 }
+
+footer-demo.tsx not implemented yet
+*/

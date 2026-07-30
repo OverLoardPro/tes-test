@@ -1,7 +1,7 @@
-# Example Landing Page
+# Landing Page Project
 
 ## Description
-This project can serve as a good basis for beginner/newbie developers alike to begin their website building journey.
+This project can serve as a good basis for beginner/newbie developers alike to begin their website building journey. It incorporates a few elementary programming functions to allow 
 
 ## Installation
 1. Clone repository
@@ -11,7 +11,7 @@ This project can serve as a good basis for beginner/newbie developers alike to b
 ## Usage
 Visit localhost:3000, I would advise looking at the terminal for further instruction
 
-## Contributing
+## Contributions
 Feel free to submit pull requests or open issues if need be
 
 ## License

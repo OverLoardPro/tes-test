@@ -55,6 +55,30 @@ export default function LandingPage() {
           <Button variant="ghost" className="border border-white/20">Pelajari Lebih Lanjut</Button>
         </div>
       </section>
+      {/* About Ambassador */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Apa itu Ambassador Open House Fasilkom UI?</h2>
+            <p className="text-lg text-slate-200 mb-6">Program Ambassador Open House Fasilkom UI 2026 mengajak anak-anak SMA/K sederajat dan influencer untuk meningkatkan brand awareness Fasilkom UI. Ambassador bertugas membuat konten digital untuk menyebarkan informasi mengenai Open House Fasilkom UI dan Fasilkom UI.</p>
+
+            <div className="flex gap-4">
+              <div className="bg-white/6 p-6 rounded-lg w-40">
+                <div className="text-2xl font-bold">200+</div>
+                <div className="text-sm opacity-80">Pendaftar dari seluruh Indonesia</div>
+              </div>
+              <div className="bg-white/6 p-6 rounded-lg w-40">
+                <div className="text-2xl font-bold">250+</div>
+                <div className="text-sm opacity-80">Pengguna Referral Code</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <div className="w-full h-64 bg-white/5 rounded-xl flex items-center justify-center">Mascot / Illustration</div>
+          </div>
+        </div>
+      </section>
 
     </main>
   );

@@ -126,6 +126,20 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+      {/* Contact Person */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="flex flex-col items-center gap-6">
+          <div className="w-full max-w-3xl bg-white/6 rounded-xl p-8">
+            <div className="flex items-center justify-center gap-4">
+              <ContactPerson
+                firstContactUrl="mailto:ambassador@fasilkom.ui.ac.id"
+                secondContactUrl="https://wa.me/6281234567890"
+                horizontal
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

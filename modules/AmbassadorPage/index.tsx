@@ -79,7 +79,15 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
+      {/* Archive */}
+      <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-transparent to-white/5">
+        <h3 className="text-2xl text-center font-bold mb-8">Ambassador 2025's Archive</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="bg-white/6 rounded-lg h-44 flex items-center justify-center">Photo {i + 1}</div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
